@@ -4,7 +4,15 @@
       "Bash(curl *)",
       "Bash(psql *)",
       "Bash(docker exec *)",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(docker ps *)",
+      "Bash(docker logs *)",
+      "Bash(docker-compose *)",
+      "Bash(docker compose up *)",
+      "Bash(sleep *)",
+      "Bash(cat *)",
+      "Bash(docker compose down *)",
+      "Bash(docker compose build *)"
     ]
   },
   "$version": 3
