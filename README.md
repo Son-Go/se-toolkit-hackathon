@@ -4,9 +4,7 @@ A collaborative platform for university students to organize, share, and manage 
 
 ## Demo
 
-![Dashboard Screenshot](screenshots/dashboard.png)
-![Resource Upload](screenshots/upload.png)
-
+![Dashboard Screenshot](<img width="1918" height="916" alt="image" src="https://github.com/user-attachments/assets/4d261bcd-8301-4908-949c-a4f6528e6010" />)
 ## Context
 
 ### End Users
