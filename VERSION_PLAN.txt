@@ -1,0 +1,120 @@
+========================================
+StudyHub - Two-Version Implementation Plan
+========================================
+
+PRODUCT IDEA
+------------
+Product: StudyHub - Collaborative Study Resource Manager
+End-user: University students
+Problem: Students struggle to keep track of scattered study resources (PDFs, notes, links) across multiple platforms
+Solution: A centralized web application to upload, organize, and share study materials within course-specific groups
+
+Core Feature: Upload, categorize, and share study resources with tagging and search functionality
+
+
+========================================
+VERSION 1 - Does One Core Thing Well
+========================================
+
+Core Value: Enable students to upload, organize, and access study materials in one centralized platform
+
+COMPONENTS:
+
+1. Backend (Node.js + Express)
+   - User registration and login with JWT authentication
+   - Create and join courses
+   - Upload resources (files and links)
+   - Browse and search resources
+   - Download resources
+
+2. Database (PostgreSQL)
+   - Users table (credentials and profile)
+   - Courses table (course information)
+   - Course members table (track enrollment)
+   - Resources table (uploaded files with tags)
+
+3. Frontend (React + Bootstrap)
+   - Login/Register pages
+   - Dashboard (view and create courses)
+   - Course page (browse and upload resources)
+   - Resource detail page (view and download)
+
+DELIVERABLE:
+A functioning product where a user can:
+  - Register and login
+  - Create or join a course
+  - Upload study materials (PDFs, documents, links)
+  - Browse resources in their courses
+  - Search for specific resources
+  - Download resources
+
+
+
+========================================
+VERSION 2 - Builds Upon Version 1
+========================================
+
+IMPROVEMENTS TO VERSION 1:
+  - Better resource preview (inline PDF viewer, image preview)
+  - Enhanced search and filtering (by tags, file type, date)
+  - Improved upload experience (progress indicator, better error messages)
+  - Polished UI/UX (loading states, empty states, responsive design)
+
+NEW FEATURES:
+  - Comments system on resources (enables collaboration)
+  - Tag-based browsing across all courses
+  - User profile page (view own uploads and courses)
+
+ADDRESS TA FEEDBACK:
+  - Document all feedback points from Version 1 demo
+  - Prioritize and implement critical feedback
+  - Fix any bugs or issues identified by TA
+  - Improve code quality and error handling based on suggestions
+
+DEPLOYMENT:
+  - Dockerize all services (backend, frontend, database)
+  - Deploy to university VM (Ubuntu 24.04)
+  - Test deployed application end-to-end
+  - Ensure accessibility from external network
+
+DELIVERABLES:
+  - Deployed application accessible at VM IP address
+  - Complete GitHub repository (se-toolkit-hackathon)
+    - MIT license
+    - Comprehensive README with screenshots and deployment guide
+  - 5-slide presentation PDF with:
+    1. Title (product name, your name, email, group)
+    2. Context (end-user, problem, solution)
+    3. Implementation (tech stack, V1 vs V2, TA feedback addressed)
+    4. Demo video (<2 minutes, pre-recorded with voice-over)
+    5. Links and QR codes (GitHub repo, deployed product)
+  - Moodle submission before Thursday 23:59
+
+
+========================================
+TECHNOLOGY STACK
+========================================
+
+Backend:    Node.js + Express.js
+Database:   PostgreSQL 15
+Frontend:   React + TypeScript + Bootstrap 5
+Auth:       JWT (jsonwebtoken) + bcrypt
+Deployment: Docker + Docker Compose
+Repository: GitHub (se-toolkit-hackathon)
+
+
+========================================
+TIMELINE
+========================================
+
+Lab Session:
+  - Quiz (Task 1)
+  - Ideate and plan (Task 2) → Get TA approval
+  - Build Version 1 (Task 3) → Show TA for feedback
+
+After Lab (Before Thursday 23:59):
+  - Address TA feedback
+  - Implement Version 2 features
+  - Dockerize and deploy
+  - Create presentation and demo video
+  - Submit via Moodle
