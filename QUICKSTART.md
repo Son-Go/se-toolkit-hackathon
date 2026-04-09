@@ -33,11 +33,11 @@ cd backend
 # Install dependencies
 npm install
 
-# Create .env file
-    cp .env.example .env
+# Create .env file from example
+cp .env.example .env
 
-# Start PostgreSQL (if not using Docker)
-# Make sure database is running and accessible
+# Initialize the database (creates tables automatically)
+npm run db:init
 
 # Start the server
 npm run dev
@@ -106,8 +106,21 @@ curl -X POST http://localhost:3000/api/auth/login \
 ```bash
 cd backend
 npm install
+cp .env.example .env
+npm run db:init
 # Check if PostgreSQL is running
 # Verify DATABASE_URL in .env
+```
+
+**Registration/Login not working:**
+```bash
+# Make sure database is initialized
+cd backend
+npm run db:init
+
+# Check backend logs for errors
+npm run dev
+# Look for database connection errors in console
 ```
 
 **Frontend won't start:**
